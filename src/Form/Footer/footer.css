@@ -1,0 +1,9 @@
+.footer-backgroud{
+    position: fixed; 
+    height: 50px;
+    background-color: rgb(27, 27, 27);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,19 @@
+.navbar-item {}
+
+.navbar-item:hover {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgb(230, 120, 50);
+    border-radius: 10px;
+    color: white;
+
+}
+
+.navbar-item-dropdown {}
+
+.navbar-item-dropdown:hover {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgb(230, 120, 50);
+    border-radius: 10px;
+}

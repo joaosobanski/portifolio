@@ -1,0 +1,14 @@
+.background {
+  
+  background-image: linear-gradient(to right, rgb(46, 45, 45), rgb(97, 96, 96));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
