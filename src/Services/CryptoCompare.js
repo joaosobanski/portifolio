@@ -8,12 +8,10 @@ export async function getCryptoCompare(a, b) {
         if (res.status == 200) {
             return res.data.PRICE;
         } else if (res.status == 503) {
-            console.log('503')
             return ''
         }
-        else {
-            console.log('null')
-            return null;
+        else if (res.status == 204) {
+            return '';
         }
     } catch (ex) {
         console.log('Exception', ex)
