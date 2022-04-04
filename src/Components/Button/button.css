@@ -1,0 +1,14 @@
+.connect { 
+    border-radius: 20px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgb(255, 180, 17);
+    background-color: black;
+    color: rgb(255, 180, 17);
+} 
+
+.connect:hover {
+    -webkit-box-shadow: 2px 3px 10px rgb(255, 180, 17);
+    box-shadow: 2px 3px 10px rgb(255, 180, 17);
+    text-shadow: 0.5px 0.5px;
+}

@@ -1,0 +1,45 @@
+.text-input {    
+  margin: 1px;
+  border-radius: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-input-200 { 
+  background-color: transparent;
+  width: 200px;
+  border-radius: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-input:hover {
+  border: 2px solid;
+  border-color: rgb(233, 233, 233);
+}
+
+.labeltext {
+  text-align: end;
+  color: black;
+  margin: 10px; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.border {
+  padding: 2px;
+  margin-top: 3px;
+  opacity: .9;
+  text-align: center;
+  border: 2px solid;
+  border-color: rgba(248, 248, 248, 0.041);
+  border-radius: 10px;
+}
+
+
+
+.border2 {
+  align-content: flex-end;
+  padding: 2px;
+  margin-top: 3px;
+  border: 2px solid;
+  border-color: rgba(248, 248, 248, 0.041);
+  border-radius: 10px;
+}

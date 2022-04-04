@@ -7,6 +7,7 @@ import { FormHome } from "./Form/Home/FormHome";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FormFeedBack } from "./Form/FeedBack/FormFeedBack";
 import { FormAutoStakeCalculator } from "./Form/Calculator/FormAutoStakeCalculator";
+import { FormFarmLpSimulator } from "./Form/Portifolio/FormFarmLpSimulator";
 
 
 function App() {
@@ -14,13 +15,16 @@ function App() {
     <BrowserRouter>
       <div className="background">
         <NavBar />
-        <Routes>
-          <Route path="/" element={<FormHome />} />
-          <Route path="/FeedBack" element={<FormFeedBack />} />
-          <Route path="/ImpLossCalculator" element={<FromImpLossCalculator />} />
-          <Route path="/AutoStakeCalculator" element={<FormAutoStakeCalculator />} />
-        </Routes>
-        <FormFooter />
+        <div className="center">
+          <Routes>
+            <Route path="/" element={<FormHome />} />
+            <Route path="/FeedBack" element={<FormFeedBack />} />
+            <Route path="/ImpLossCalculator" element={<FromImpLossCalculator />} />
+            <Route path="/AutoStakeCalculator" element={<FormAutoStakeCalculator />} />
+            <Route path="/FarmLPSimulator" element={<FormFarmLpSimulator />} />
+          </Routes>
+          <FormFooter />
+        </div>
       </div>
     </BrowserRouter>
   );

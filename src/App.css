@@ -1,5 +1,4 @@
 .background {
-  
   background-image: linear-gradient(to right, rgb(46, 45, 45), rgb(97, 96, 96));
   background-repeat: no-repeat;
   background-position: center;
@@ -11,4 +10,9 @@
   /* Preserve aspet ratio */
   min-width: 100%;
   min-height: 100%;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
