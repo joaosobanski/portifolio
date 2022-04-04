@@ -9,22 +9,25 @@ export const FormFeedBack = () => {
     const [v, setV] = useState('');
 
     const consultar = () => {
-        getCryptoCompare(a, b).then(e => {
-            console.log('json', e)
-            setV(e);
-        });
+        if (a && b)
+            getCryptoCompare(a, b).then(e => {
+                console.log('json', e)
+                setV(e);
+            });
     }
 
     return (
-        <div>
+        <div className="panel-center">
+            <Label text="Write Token" />
+            <br />
             <Label text="Token A" />
             <TextInput handleChange={setA} value={a} />
             <br />
             <Label text="Token B" />
             <TextInput handleChange={setB} value={b} />
-            <button onClick={consultar}>consultar</button>
+            <button onClick={consultar}>Search</button>
             <br />
-            <Label text="Valor" />
+            <Label text="Value" />
             <TextInput handleChange={setV} value={v} />
         </div>
     )
