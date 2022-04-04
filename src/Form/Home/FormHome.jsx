@@ -1,11 +1,10 @@
 
-import { Label } from "../../Components/Label/Label"
+import { Label } from "../../Components/Label/Label" 
 
 export const FormHome = () => {
-
     return (
         <div >
-            <Label text="FormHome" />
+            <Label text={`home`} />
         </div>
     )
 }

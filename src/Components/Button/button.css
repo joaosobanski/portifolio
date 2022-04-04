@@ -1,14 +1,28 @@
-.connect { 
+.connect {
     border-radius: 20px;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: rgb(255, 180, 17);
-    background-color: black;
+    background-color: transparent;
     color: rgb(255, 180, 17);
-} 
+}
 
 .connect:hover {
     -webkit-box-shadow: 2px 3px 10px rgb(255, 180, 17);
     box-shadow: 2px 3px 10px rgb(255, 180, 17);
     text-shadow: 0.5px 0.5px;
+}
+
+.button {
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: rgb(255, 180, 17);
+    background-image: linear-gradient(to right, rgb(255, 180, 17), rgb(243, 214, 150));
+}
+
+.button:hover {
+    background-image: linear-gradient(to left, rgb(255, 180, 17), rgb(243, 214, 150));
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid;
 }

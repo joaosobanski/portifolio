@@ -1,9 +1,12 @@
 import { useState } from "react"
 import { Label } from "../../Components/Label/Label"
+import { PanelCenter } from "../../Components/Panel/PanelCenter";
 import { TextInput } from "../../Components/TextInput/TextInput";
+import { useJwt } from "../../Context/JwtContext";
 import { getCryptoCompare } from "../../Services/CryptoCompare";
 
 export const FormFeedBack = () => {
+    const { jwt, setJwt } = useJwt();
     const [a, setA] = useState('');
     const [b, setB] = useState('');
     const [v, setV] = useState('');
@@ -11,14 +14,14 @@ export const FormFeedBack = () => {
     const consultar = () => {
         if (a && b)
             getCryptoCompare(a, b).then(e => {
-                console.log('json', e)
                 setV(e);
             });
     }
 
     return (
-        <div className="panel-center">
+        <PanelCenter>
             <Label text="Write Token" />
+            <Label text={jwt} />
             <br />
             <Label text="Token A" />
             <TextInput handleChange={setA} value={a} />
@@ -29,6 +32,6 @@ export const FormFeedBack = () => {
             <br />
             <Label text="Value" />
             <TextInput handleChange={setV} value={v} />
-        </div>
+        </PanelCenter>
     )
 }

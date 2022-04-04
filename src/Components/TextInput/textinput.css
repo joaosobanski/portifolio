@@ -1,6 +1,7 @@
 .text-input {    
   margin: 1px;
   border-radius: 10px;
+  width: 170px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 

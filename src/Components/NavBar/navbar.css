@@ -8,7 +8,9 @@
 
 }
 
-.navbar-item-dropdown {}
+.navbar-item-dropdown {
+    border-radius: 0px;
+}
 
 .navbar-item-dropdown:hover {
     border-top: 1px solid;

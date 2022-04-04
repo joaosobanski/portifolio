@@ -1,8 +1,8 @@
 .panel-center {
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 20px;
     min-width: 350px;
     min-height: 200px;
     -webkit-box-shadow: 2px 3px 10px rgb(255, 180, 17);
@@ -11,4 +11,12 @@
 
 .rascunho {
     box-shadow: 10px 5px 5px rgb(255, 180, 17);
+}
+
+.panel-block {
+    min-width: 250px; 
+    text-align: center;
+    border: 1px solid;
+    border-radius: 20px; 
+    border-color: rgb(255, 180, 17);
 }
