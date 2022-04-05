@@ -1,16 +1,25 @@
 import P from 'prop-types';
 import './textinput.css';
 
-export const TextInput = ({ placeholder, value, handleChange, typeInput = "text", className = "text-input" }) => {
-  return (
-    <input
-      className={className}
-      onChange={(e) => handleChange(e.target.value.toUpperCase())}
-      value={value}
-      type={typeInput}
-      placeholder={placeholder}
-    />
-  );
+export const TextInput = ({ placeholder, value, handleChange, typeInput = "text", className = "text-input", disabled = false }) => {
+
+  if (disabled)
+    return (
+      <label
+        className="label-input"
+      >{value}</label>
+    )
+  else
+    return (
+      <input
+        className={className}
+        onChange={(e) => handleChange(e.target.value.toUpperCase())}
+        value={value}
+        disabled={disabled}
+        type={typeInput}
+        placeholder={placeholder}
+      />
+    );
 };
 
 TextInput.propTypes = {

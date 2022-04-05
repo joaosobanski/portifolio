@@ -1,7 +1,19 @@
 .label-Label {
     color: rgb(255, 180, 17);
 }
+.label-grid {
+    padding: 5px;
+    color: rgb(255, 180, 17);
+}
+.label-small {
+    font-size: 10px;
+    color: rgb(255, 180, 17);
+}
 
+
+.label-grid:hover {
+    color: rgb(255, 255, 255);
+}
 .label-Label:hover {
     color: rgb(255, 255, 255);
 }

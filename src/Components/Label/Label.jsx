@@ -1,8 +1,8 @@
 import P from 'prop-types'; 
 import './label.css';
 
-export const Label = ({ text, classname }) => (
-    <label className={classname ? classname : 'label-Label'}  >
+export const Label = ({ text, classname, onClick }) => (
+    <label className={classname ? classname : 'label-Label'} onClick={onClick} >
         {text}
     </label>
 );

@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import { Button } from "../Components/Button/Button"
+import { postConnect } from "../Services/AuthService";
 import { useJwt } from "./JwtContext";
 
 export const AuthConnect = () => {
-    const { jwt, setJwt, isConnected, setConnected, address, setAddress } = useJwt();
+    const { jwt, setJwt, isConnected, setConnected, address, setAddress, _id, setId } = useJwt();
 
     useEffect(() => {
         pressedConnectWallet();
@@ -31,13 +32,17 @@ export const AuthConnect = () => {
                 const address = await window.ethereum.request({
                     method: 'eth_requestAccounts'
                 });
+                var jwt = await postConnect(address);
+                console.log(jwt);
+                setJwt(jwt.token);
+                setId(jwt.id);
 
                 const object = {
                     connectedStatus: true,
                     status: 'Success!',
                     addres: address
                 }
-                setJwt(address);
+                setAddress(address);
                 setConnected(true);
 
                 return object;
@@ -47,8 +52,6 @@ export const AuthConnect = () => {
             }
             finally {
             }
-
-
         } else {
             const er = {
                 connectStatus: false,

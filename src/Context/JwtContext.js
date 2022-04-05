@@ -1,7 +1,8 @@
 import React, { createContext, useState, useContext } from "react";
 
 const JwtContext = createContext();
-
+//global.api = "http://tothemoonapi.herokuapp.com"
+global.api = "http://localhost:3003"
 export function JwtProvider({ children }) {
     const [jwt, setJwt] = useState('');
     const [_id, setId] = useState('');
