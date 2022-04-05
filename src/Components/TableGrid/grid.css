@@ -1,0 +1,14 @@
+.tablecol {
+  min-width: 70px;
+  color: rgb(255, 180, 17);
+}
+
+.tablecol:hover {
+  color: rgb(255, 255, 255);
+}
+
+.divrow { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

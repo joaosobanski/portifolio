@@ -1,6 +1,10 @@
 
-export const numberFormat = (value) => 
-  new Intl.NumberFormat('en-IN', {
-    style: 'currency',
-    currency: 'USD'
-  }).format(value);
+export const numberFormat = (value) => {
+  if (value)
+    return new Intl.NumberFormat('en-IN', {
+      style: 'currency',
+      currency: 'USD'
+    }).format(value);
+  else
+    return value
+}

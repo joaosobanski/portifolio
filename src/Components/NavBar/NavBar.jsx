@@ -34,6 +34,8 @@ export const NavBar = () => {
                                 <Label text="Portifolio" />
                             }
                             id="collasible-nav-dropdown">
+                            <NavDropdown.Item className='navbar-item-dropdown' onClick={() => nav('/TokensCoins')}>Tokens / Coins</NavDropdown.Item>
+
                             <NavDropdown.Item className='navbar-item-dropdown' onClick={() => nav('/FarmLPSimulator')}>Create LP Token and stake Simulator</NavDropdown.Item>
                             <NavDropdown.Divider />
                         </NavDropdown>

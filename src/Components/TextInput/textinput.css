@@ -1,7 +1,7 @@
 .text-input {    
   margin: 1px; 
   border-radius: 10px;
-  width: 170px;
+  width: 180px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .label-input {    
@@ -10,10 +10,17 @@
   background-color: rgb(233, 233, 233);
   border-radius: 10px;
   border: 1px solid;
-  width: 170px;
+  width: 180px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.date{
+  margin: 1px; 
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  width: 150px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .text-input-400 {  
   width: 400px;
