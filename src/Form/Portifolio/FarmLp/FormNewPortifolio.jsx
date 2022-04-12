@@ -14,6 +14,7 @@ import { getCryptoCompare } from "../../../Services/CryptoCompare"
 import { postFarmlLp } from "../../../Services/Portifolio/PortifolioService"
 
 
+
 export const FormNewPortifolio = ({ onNew, onHandleNewPortifolio }) => {
     const { jwt, address, _id } = useJwt();
     const [dateSelected, setDateSelected] = useState(moment(new Date()).format("YYYY-MM-DD"));

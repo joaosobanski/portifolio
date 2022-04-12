@@ -22,12 +22,29 @@ export const NavBar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='menuback'>
             <Container>
-                <Navbar.Brand onClick={() => nav('/')}>
+                <Navbar.Brand onClick={() => nav('/ImpLossCalculator')}>
                     <Label text="Capivara.Finance" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
+
+                        <Nav.Link className='navbar-item' onClick={() => nav('/ImpLossCalculator')}>
+                            <Label text="Farm - Impermanent Loss" />
+                        </Nav.Link>
+                    </Nav>
+
+
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    )
+
+}
+
+/*
+
+
                         <NavDropdown
                             className='navbar-item'
                             title={
@@ -54,20 +71,11 @@ export const NavBar = () => {
                         <Nav.Link className='navbar-item' onClick={() => nav('/FeedBack')}>
                             <Label text="Send FeedBack" />
                         </Nav.Link>
-                    </Nav>
+
 
                     <Nav>
                         <AuthConnect />
                     </Nav>
-
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
-    )
-
-}
-
-/*
 
 
                     <Nav>

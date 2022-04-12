@@ -55,7 +55,6 @@ const App = () => {
                     <FormListTokens />
                   </Auth>} />
             </Routes>
-            <FormFooter />
           </div>
         </JwtProvider>
       </div >
@@ -64,3 +63,4 @@ const App = () => {
 }
 
 export default App;
+//<FormFooter />
